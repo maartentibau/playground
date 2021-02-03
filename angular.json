@@ -1,7 +1,8 @@
 {
   "version": 1,
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "packageManager": "npm"
   },
   "schematics": {
     "@nrwl/angular": {
@@ -51,7 +52,9 @@
               "apps/marble-testing/src/favicon.ico",
               "apps/marble-testing/src/assets"
             ],
-            "styles": ["apps/marble-testing/src/styles.scss"],
+            "styles": [
+              "apps/marble-testing/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -112,7 +115,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/marble-testing"],
+          "outputs": [
+            "coverage/apps/marble-testing"
+          ],
           "options": {
             "jestConfig": "apps/marble-testing/jest.config.js",
             "passWithNoTests": true
@@ -141,7 +146,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps\\marble-testing-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps\\marble-testing-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }

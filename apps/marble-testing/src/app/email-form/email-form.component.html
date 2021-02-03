@@ -1,0 +1,6 @@
+<div *ngIf="canManage">
+  <form [formGroup]="emailForm">
+    <input FormControlName="email" />
+    <button [disabled]="disableButton$ | async" type="submit">Submit</button>
+  </form>
+</div>

@@ -1,14 +1,21 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
+# Compiled Output
 /dist
 /tmp
+/app/**/*.js
+/app/**/*.js.map
 /out-tsc
 
-# dependencies
-/node_modules
+# E2E
+/e2e/*.js
+/e2e/*.map
 
-# IDEs and editors
+# Dependencies
+/node_modules
+/bower_components
+
+# IDEs & Editors
 /.idea
 .project
 .classpath
@@ -17,12 +24,9 @@
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# VSCode
+/.vscode
+.history
 
 # misc
 /.sass-cache

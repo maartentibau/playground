@@ -2,3 +2,14 @@
 
 /dist
 /coverage
+**/.idea
+**/.ng_pkg_build
+**/.vscode
+dist
+e2e
+node_modules
+package.json
+package-lock.json
+angular-cli.json
+angular.json
+nx.json
